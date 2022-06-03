@@ -45,7 +45,10 @@ body {
   transition: opacity .5s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
-
+  -webkit-transition: opacity .5s ease-out, visibility 0s linear 0s;
+  -moz-transition: opacity .5s ease-out, visibility 0s linear 0s;
+  -ms-transition: opacity .5s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .5s ease-out, visibility 0s linear 0s;
 }
 
 /*********END * SPINNER*********************/
@@ -135,9 +138,8 @@ header {
   background-size: cover;
   height: 100vh;
 }
-
 /**********END HEADER*********************/
-/*********STAR CATOGRIES*****************/
+/*********STAR CATOGRIES********
 .categories {
   height: 100vh;
  background: white;
@@ -147,7 +149,7 @@ header {
        margin: 0 auto;
     position: relative;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
+  }*********/
 
 
 /*******END  CATOGRIES****************/
