@@ -7,8 +7,9 @@ default fonts 64px
   --primary: #FEA116;
   --light: #F1F8FF;
   --dark: #0F172B;
-}
 
+  }
+/* All delay classes will take half the time to start */
 * {
   box-sizing: border-box;
 
@@ -35,12 +36,13 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity .5s ease-out, visibility 0s linear .5s;
-  z-index: 99999;
+    z-index: 99999;
   -webkit-transition: opacity .5s ease-out, visibility 0s linear .5s;
   -moz-transition: opacity .5s ease-out, visibility 0s linear .5s;
   -ms-transition: opacity .5s ease-out, visibility 0s linear .5s;
   -o-transition: opacity .5s ease-out, visibility 0s linear .5s;
 }
+.spinner-border{color: var(--primary);}
 
 #spinner.show {
   transition: opacity .5s ease-out, visibility 0s linear 0s;
@@ -160,6 +162,4 @@ header {
     position: relative;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }*********/
-
-
 /*******END  CATOGRIES****************/
