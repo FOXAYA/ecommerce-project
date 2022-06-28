@@ -13,6 +13,7 @@ default fonts 64px
 /* All delay classes will take half the time to start */
 * {
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 a {
@@ -159,14 +160,13 @@ header {
 }
 
 .pa-fixed-header {
-  background-color: var(--primary);
+  background-color: var(--dark);
   transition: background-color 1s ease-out;
-}
-
-.text-black {
+  color: var(--light);
+ }
+.text-black{
   color: var(--white) !important;
 }
-
 /**********END HEADER*********************/
 /*********STAR CATOGRIES********/
 .card-container {
@@ -178,22 +178,23 @@ header {
 .card {
   padding: 0 !important;
 }
+.head-tit {
+  color: var(--dark);
+  text-decoration: underline;
+  font-size: 35px;
+}
+.card-footer a{
+color: #FEA116;
+}
 
 /*******END  CATOGRIES****************/
 footer {
   background-color: var(--dark);
 }
-
 .container-fluid {
   padding: 0;
 }
-
+.row, .container-fluid{padding: 0;margin: 0;}
 .footer-bottom {
   background: var(--primary);
-}
-
-.head-tit {
-  color: var(--dark);
-  text-decoration: underline;
-  font-size: 35px;
 }
