@@ -82,9 +82,63 @@
               <input type="search" spellcheck="false" autocomplete="free-text-search" value=""
                 placeholder="Find Cars, Mobile Phones and more...">
               <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-              <a href="#" class="btn btn-primary mr-md-1 btn-square py-2 px-4">Log in</a>
+              <!-----------------------login form--------------------------------------------------->
+               <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-primary mr-md-1 btn-square py-2 px-4 lo-fo">Login</button>
+             <div id="id01" class="modal">
+             <div class="logocontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <a class="navbar-brand animated rotateInDownLeft" href="#">
+              <span class="logo">F<img src="images/favicon-32x32.png" class="logo-img" alt="">X</span>
+            </a>
+            <h2>Welcome To Fox</h2>
           </div>
-      </nav>
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="row">
+                <h2 class="text-center">The trusted community of buyers and sellers.</h2>
+              <!-- <div class="vl">
+                  <span class="vl-innertext">or</span>
+                  </div>
+              -->
+                <div class="col">
+                  <a href="#" class="fb btn">
+                    <i class="fab fa-facebook-f fa-lg fa-fw"></i> Login with Facebook
+                   </a>
+                  <a href="#" class="twitter btn">
+                    <i class="fab fa-twitter-f fa-lg fa-fw"></i> Login with Twitter
+                  </a>
+                  <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                    </i> Login with Google+
+                  </a>
+                </div>
+                  <div class="hide-md-lg">
+                    <p>Or sign in manually:</p>
+                  </div>
+                  <input type="text" name="username" placeholder="Username" required>
+                  <input type="password" name="password" placeholder="Password" required>
+                  <input type="submit" value="Login">
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <!--------
+          <div class="bottom-container">
+            <div class="row">
+              <div class="col">
+                <a href="#" style="color:white" class="btn">Sign up</a>
+              </div>
+              <div class="col">
+                <a href="#" style="color:white" class="btn">Forgot password?</a>
+              </div>
+            </div>
+          </div>
+----->
+        <!-- <a href="#" class="btn btn-primary mr-md-1 btn-square py-2 px-4">Log in</a>-->
+            </form>
+            </div>
+        </div>
+              </nav>
       <!--- End nav bar-->
       <div class="container-fluid py-5  ">
         <div class="container py-5">
@@ -98,7 +152,7 @@
               <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"><i
                   class="fa-solid fa-circle-plus px-1 fa-1x"></i>SELL</a>
               <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"><i
-                  class="fa-solid fa-cart-shopping"></i> BUY</a>
+                class="fa-solid fa-cart-shopping"></i> BUY</a>
             </div>
           </div>
         </div>
