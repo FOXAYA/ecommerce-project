@@ -6,21 +6,32 @@
   display:flex;
   flex-direction: row;
   justify-content: center;
-
 }
-.navbar-expand-lg .navbar-nav .nav-link{font-size: 0.77rem; margin-left: 20px;}
-form {
+.navbar-expand-lg .navbar-nav .nav-link{
+  font-size: 0.77rem;
+  margin-left: 20px;}
+.form1{
   width: 100%;
   margin-left: 0;
   margin-top: 20px;
  }
-
-form [type=search] {width: 200px;}
+ .form1 .search {height: 40px;}
+.form1 [type=search] {
+  width: 200px;
+  margin-left: 5px;
+  height: 40px;}
 .btn.btn.btn-primary {font-weight: 300;}
+.header-bottom{ margin-top:50px ;}
 /**********END HEADER*********************/
-
+.modal{
+     left: 10%;
+    top: 70px;
+    width:80%;
+    background-color: rgba(0, 0, 0, 0.853);
+    height: 80vh;
+   }
 }
-@media (max-width: 769) ,(max-width: 992px) {
+@media (max-width: 580px) ,(max-width: 992px) {
   /*****************START HEADER**************************/
 .navbar-toggler-icon {border: 1px solid #F1F8FF}
 .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
@@ -28,25 +39,46 @@ form [type=search] {width: 200px;}
   display:flex;
   flex-direction: row;
   justify-content: center;
-
 }
 .navbar-expand-lg .navbar-nav .nav-link{font-size: 0.77rem; margin-left: 20px;}
-form {
+.form1 {
   width: 100%;
   margin-left: 0;
   margin-top: 20px;
  }
-
 form [type=search] {width: 200px;}
 .btn.btn.btn-primary {font-weight: 300;}
-
  form [type=search] {
   width: 220px;
   background-color: transparent;
   border: 2px solid var(--primary);
   outline: 2px solid var(--primary);
+
 }
+.header-bottom{margin-top: 30px;}
+  .modal{
+  left: 10%;
+   top: 70px;
+   width:80%;
+   background-color: rgba(0, 0, 0, 0.853);
+   height: 80vh;
+  }
+.rem-container{
+ display:flex ;
+ flex-direction: column;
+ align-items: center;
 }
+.rem-container .btn.btn.btn-primary{margin-left: 0;}
+}
+.social-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal .google, .modal .fb{
+  margin-left: 0;
+}
+
 
 /*
  Medium devices (tablets, 768px and up)
