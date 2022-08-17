@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- basic -->
   <meta charset="utf-8">
@@ -19,6 +18,7 @@
   <link rel="stylesheet" href="CSS/all.min.css">
   <!-- style css -->
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/login.css">
   <link rel="stylesheet" href="CSS/Mediaquery.css">
   <!----------------fonts------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,7 +82,7 @@
           <input type="search" spellcheck="false" autocomplete="free-text-search" value=""
             placeholder="Find Cars, Mobile Phones and more...">
           <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-          <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-primary mr-md-1 btn-square py-2 px-4 lo-fo ">Login</a>
+          <a href="login.html" style="width:auto;" class="btn btn-primary mr-md-1 btn-square py-2 px-4 lo-fo ">Login</a>
           </form>
           </div>
     </div>
@@ -95,9 +95,9 @@
               Used every thing at your fingertips New & Used every thing at your fingertips New & Used
               every thing at your fingertips New & Used every thing at your fingertips New & Used
             </p>
-              <a href="#" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
-          onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
-          <i class="fa-solid fa-circle-plus px-1 fa-1x"></i>SELL</a>
+     <a href="#" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
+       style="width:auto;">
+        <i class="fa-solid fa-circle-plus px-1 fa-1x"></i>SELL</a>
              <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"><i
              class="fa-solid fa-cart-shopping"></i>  BUY</a>
       </div>
@@ -105,97 +105,7 @@
       </div>
       </header>
   <!--"""""""""""""""""""""""""""End Header""""""""""""""""""""""""""""""""""-->
-  <!--********************Start LOgin submit forms****************************-->
-    <!--------------------Login form 3-->
-  <section id="id01" class="modal">
-    <div class="logo-container text-center">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close"
-        title="Close Modal">&times;</span>
-      <a class="navbar-brand animated rotateInDownLeft" href="#">
-      <span class="logo"><img src="images/favicon-32x32.png" class="logo-img" alt=""></span>
-      </a>
-      <h2>Welcome To Fox</h2>
-      <h6 class="text-center">The trusted community of buyers and sellers.</h6>
-    </div>
-       <form action="/action_page.php" class="form2">
-        <div class="row">
-          <div class="contaiener text-center">
-          <div class="col social text-center ">
-            <span class="ema-il"><i class="fa-solid fa-user fa-lg fa-fw social-i"></i>
-              <input type="email" class="Email" placeholder="username or email">
-            </span>
-            <span class="pass-word d-block mt-2">
-              <i class="fa-solid fa-lock fa-lg fa-fw social-i"></i>
-              <input type="password" class="password" placeholder="password">
-            </span>
-            <div class="rem-container">
-            <span class="check-b d-inline-block mt-3 px-3"><input type="checkbox" value="lsRememberMe"
-                id="rememberMe">
-              <label for="rememberMe" class="Reme">Remember me</label>
-              <a href="#" class="text-primary text-decoration-underline ml-3">F orget password?</a>
-            </span>
-            <button type="submit" class="btn btn-primary log-2 mt-3">Log in</button>
-          </div>
-        </div>
-      </div>
-        </form>
-      <h5 class="text-center mt-3 mb-3">OR</h5>
-      <div class="social-container">
-      <a href="#" class="google btn "><i class="fab fa-google fa-lg fa-fw social-i"></i> Login with
-        Google+ </a>
-      <a href="#" class="fb btn mt-3">
-        <i class="fab fa-facebook-f fa-lg fa-fw social-i"></i> Login with Facebook
-      </a>
-     </div>
-   <div class="text-center mt-3">
-      <span class="color-gray">New?</span>
-      <a href="#">Sign-up</a>
-      <span class="color-gray">Free</span>
-    </div>
-     </div>
-      </section>
-   <!--------------------submit form 3-->
-   <section id="id02" class="modal">
-    <span onclick="document.getElementById('id02').style.display='none'" class="close"
-      title="Close Modal">&times;</span>
-      <div class="logo-container text-center">
-        <a class="navbar-brand animated rotateInDownLeft" href="#">
-          <span class="logo "><img src="images/favicon-32x32.png" class="logo-img" alt=""></span>
-          </a>
-        <h1 class="bold mt-3">CREATE ACCOUNT</h1>
-      </div>
-   <form action="/action_page.php" class="form3">
-        <div class="row text-center ">
-          <span class="user-name d-block mb-3 mt-3">
-            <i class="fa-solid fa-user-alt fa-lg fa-fw social-i"></i>
-            <input type="text" class="username" placeholder="User Name">
-          </span>
-        <span class="ema-il mb-3 mt-3 "><i class="fa-solid fa-envelope fa-lg fa-fw social-i"></i>
-          <input type="email" class="Email" placeholder="email">
-        </span>
-        <span class="tele-phone mb-3 mt-3"><i class="fa-solid fa-phone fa-lg fa-fw social-i"></i>
-          <input type="tel" class="Tel" placeholder="phone number">
-        </span>
-            <span class="pass-word d-block  mb-3 mt-3">
-          <i class="fa-solid fa-lock fa-lg fa-fw social-i"></i>
-          <input type="password" class="password" placeholder="password">
-        </span>
-        <span class="pass-word d-block  mb-2 mt-2">
-          <i class="fa-solid fa-lock fa-lg fa-fw social-i"></i>
-          <input type="password" class="password" placeholder="repeat password">
-        </span>
-      </div>
-      </form>
-      <div class="container text-center">
-      <button type="submit" class="btn btn-primary log-2 mt-3 ">Log in</button>
-      <span class="agree-b d-inline-block mt-3  text-capitalize">
-      <h6>By continuing, you are accepting</h6>
-      FOX <a href="terms.html" class="text-decoration-underline ml-3">terms of use</a>
-      and <a href="#" class="text-decoration-underline ml-3"> Privacy Policy</a>
-    </span>
-    </div>
-      </section>
-    <!--""""""""""""""""""""EndLOgin submit forms"""""""""""""""""""""""""""""""-->
+
     <!--**************************Start Catogories****************************-->
     <section class="categories mt-3">
         <div class="container-fluid">
@@ -240,8 +150,7 @@
             <div class="card-body">
               <h5 class="card-title">product name</h5>
               <p class="card-text text-capitalize">Some quick description text to your product on the card title and
-                make up the bulk of
-                the card's content.</p>
+make up the bulk ofthe card's content.</p>
               <div class="card-footer d-flex justify-content-between ">
                 <h5 class="card-price">$55</h5>
                 <a href="#"><i class="fa fa-heart"></i></a>

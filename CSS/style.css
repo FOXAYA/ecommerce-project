@@ -50,6 +50,7 @@ body {
   background: transparent;
   border: 1px solid var(--primary);
 }
+
 /***second form****/
 .form2{margin-left:0;}
  input[type="email" i],
@@ -68,76 +69,111 @@ input::placeholder {
   text-transform: capitalize;
 }
 .check-b {font-size: 12px;}
-.modal {
-  display: none;
-  position: absolute;
+.modall{
+  position: relative;
   z-index: 150;
-  left: 52%;
-  top: 70px;
-  width:30%;
-  height: 80vh;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.429);
-  border: 1px solid wheat;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  padding-top: 20px;
+  height:90vh;
+  width: 80%;
+  margin-top: 5vh;
+  left: 5%;
+  background:var(--dark);
+  border: 1px solid rgba(245, 222, 179, 0.397);
+    padding-top: 50px;
   color: var(--light);
 }
 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: var(--primary);
-  font-size: 40px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  color: var(--light);
-  cursor: pointer;
-}
 .new-user {
   font-size: 12px;
   margin-top: 15px;
   padding: 5px;
 }
-.logo-container {padding: 5px;}
-.logo-container .bold{
+.modall .logo-container {padding: 5px;
+}
+.modall .logo-container .bold{
   font-size: 1.5rem;
   font-weight: 900;
-  color: var(--primary);}
-.social a { color: var(--light);}
-.social span {color :#F1F8FF}
+  color: var(--primary);
+}
+.social a { color: var(--light); }
+.social span {color :#F1F8FF ;line-height: 1.8;}
 .social .btn {
   width: 100%;
   margin: 5px;
   line-height: 1.8;
   color: var(--light);
+  color: var(--light);  
+ 
 }
-.modal .btn:hover {color: var(--primary);}
-.modal h5::before,
-.modal h5::after {
+.modall .btn:hover {color: var(--primary);}
+.modall h5::before,
+.modall h5::after {
   content: "ـــــــــــــــــــــــــــــــــــ";
   margin-left: 10px;
   margin-Right: 10px;
   color: #F1F8FF;
 }
-.modal .google ,.modal .fb ,
-.modal .log-2  {
-  margin-left:16%;
+.rem-container{
+display: flex;
+flex-direction: column;
+}
+.modall .google ,.modall .fb ,
+.modall .log-2  {
   text-align: center;
   color: var(--light);
-  width: 250px;
+  width :40%;
+  margin-right: auto;
   border:1px solid var(--primary);
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  padding: 10px;
 }
-.modal .log-2:hover{color: white;}
+.modall .google ,.modall .fb {margin:0;}
+.modal1 .log-2:hover{color: white;}
+.link-or{color: var(--primary) !important;}
+.sign-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  margin-top: 50px;
+}
+.sign-container{color: var(--dark); font-weight: 900;
+}.sign-container .log-3{
+   border: 1px solid var(--dark);
+   background:transparent;
+   font-size: 1.5rem;
+   letter-spacing: 1.8px;
+   line-height: 1.8;
+   padding:10px 20px;
+   width: 40%;
+}
+.wrapper {
+  width: 50%;
+  height:100vh;
+  position: absolute;
+  padding: 0;
+  left: 50%;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, var(--primary) 0%, var(--light) 100%);
+  overflow: hidden;
+}
+.wave {
+  width: 1000px;
+  height: 1025px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -600px;
+  border-radius: 35%;
+  background: rgba(255, 255, 255, .75);
+  animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
 
 /*****third form3***********/
 .agree-b{font-size: 1rem ;}
