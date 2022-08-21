@@ -33,17 +33,63 @@ scrollNavbar = () => {
     }
   }
 }
-//code form
-var login_container = document.getElementById('id01');
-var signUp_container = document.getElementById('id02');
-var container_areYouNew = document.getElementById('container-areyounew');
-
-
-function goToSignup(){
-  container_areYouNew.style.display ="none";
-  login_container.style.display = "none";
-  signUp_container.style.display = "block";
-
+//form
+function goToSignup() {
+  document.getElementById('container-areyounew').style.display = "none";
+  document.getElementById('id01').style.display = "none";
+  document.getElementById('id02').style.display = "block";
 }
+//codezz
+window.fbAsyncInit = function () {
+  FB.init({
+      appId: 530024878920498,
+      status: true,
+      cookie: true,
+      xfbml: true
+  });
+  FB.getLoginStatus(function (response) {
+      if (response.status === 'connected') {
+          console.log('connected');
+          var userProfile = document.getElementById('user-profile');
+          document.getElementById('fbBtn').style.display = "none";
+          document.getElementById('id01').style.display = 'none'
+          userProfile.style.display = "block";
 
+          FB.api('/me', { fields: 'id, name, email' }, function (response) {
+              userProfile.innerHTML = response.name +
+                  '<img src="https://graph.facebook.com/' +
+                  response.id + '/picture">';
 
+          });
+
+      } else {
+          console.log("no connected");
+      }
+  });
+};
+
+(function (doc) {
+  var script;
+  var id = 'facebook-jssdk';
+  var ref = doc.getElementsByTagName('script')[0];
+  if (doc.getElementById(id)) {
+      return;
+  }
+  script = doc.createElement('script');
+  script.id = id;
+  script.async = true;
+  script.src = "//connect.facebook.net/en_US/all.js";
+  ref.parentNode.insertBefore(script, ref);
+}(document));
+
+function FbApp_Login() {
+  FB.login(function (response) {
+      if (response.authResponse) {
+          console.log("user  loging in");
+          window.location.replace('https://foxovic.epizy.com');
+      }
+      else {
+          alert("Attempt of Login is Failed!");
+      }
+  }, { scope: 'email,user_photos,publish_actions' });
+}

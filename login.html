@@ -72,7 +72,7 @@
                 <input type="password" class="password" placeholder="password">
             </span>
             <div class="rem-container d-flex ">
-              <button type="submit" class="btn btn-primary log-2 mt-4">Log in</button>
+              <button type="submit" class="btn btn-primary log-2 log mt-4">Log in</button>
               <span class="check-b d-inline-block mt-3 px-3"><input type="checkbox" value="lsRememberMe"
                 id="rememberMe">
                 <label for="rememberMe" class="Reme">Remember me</label>
@@ -85,7 +85,7 @@
         <div class="social-container">
         <a href="#" class="google btn "><i class="fab fa-google fa-lg fa-fw social-i"></i> Login with
         Google+ </a>
-        <a href="#" class="fb btn mt-4">
+        <a href="#" class="fb btn mt-4"  onclick="FbApp_Login();">
         <i class="fab fa-facebook-f fa-lg fa-fw social-i"></i> Login with Facebook
         </a>
         </div>
@@ -98,14 +98,14 @@
     <div class="sign-container " id="container-areyounew">
    <h1>ARE YOU NEW !</h1>
     <h2>sign up now</h2>
-    <button type="submit" class="btn log-3" onclick="goToSignup();">Sign up</button>
+    <button type="submit" class="btn sign-btn" onclick="goToSignup();">Sign up</button>
     </div>
   </div>
 </div>
 </div>
   </div>
    <!--------------------submit form 3-->
-   <section id="id02 " class="modall">
+   <section id="id02" class="modall" style="display:none;">
           <div class="logo-container text-center">
         <a class="navbar-brand animated rotateInDownLeft" href="#">
           <span class="logo "><img src="images/favicon-32x32.png" class="logo-img" alt=""></span>
@@ -134,8 +134,8 @@
         </span>
       </div>
       </form>
-      <div class="container text-center">
-      <button type="submit" class="btn btn-primary log-2 mt-3 ">Log in</button>
+      <div class="container text-center sub-con">
+      <button type="submit" class="btn btn-primary log-2 log  mt-3 ">Log in</button>
       <span class="agree-b d-inline-block mt-3  text-capitalize">
       <h6>By continuing, you are accepting</h6>
       FOX <a href="terms.html" class="text-decoration-underline ml-3">terms of use</a>
@@ -144,5 +144,17 @@
     </div>
       </section>
  <!--""""""""""""""""""""EndLOgin submit forms"""""""""""""""""""""""""""""""-->
-    </body>
+ <!--**************************java script links****************************-->
+ <script src="js/bootstrap.bundle.js"></script>
+ <script src="js/bootstrap.bundle.js.map"></script>
+ <script src="js/all.min.js"></script>
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/owl.carousel.min.js"></script>
+ <script src="js/wow.min.js"></script>
+ <script src="js/wow.js.map"></script>
+ <script src="js/spinner.js"></script>
+ <script src="js/main.js"></script>
+ <script src="js/sdk.js"></script>
+</body>
     </html>

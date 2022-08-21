@@ -104,7 +104,7 @@ input::placeholder {
   color: var(--light);  
  
 }
-.modall .btn:hover {color: var(--primary);}
+
 .modall h5::before,
 .modall h5::after {
   content: "ـــــــــــــــــــــــــــــــــــ";
@@ -127,7 +127,9 @@ flex-direction: column;
   padding: 10px;
 }
 .modall .google ,.modall .fb {margin:0;}
-.modal1 .log-2:hover{color: white;}
+.modall .google:hover ,.modall .fb:hover{
+color:var(--primary)
+}
 .link-or{color: var(--primary) !important;}
 .sign-container{
   display: flex;
@@ -137,8 +139,11 @@ flex-direction: column;
   justify-content: center;
   margin-top: 50px;
 }
-.sign-container{color: var(--dark); font-weight: 900;
-}.sign-container .log-3{
+.sign-container{
+  color: var(--dark);
+  font-weight: 900;
+}
+.sign-container .sign-btn{
    border: 1px solid var(--dark);
    background:transparent;
    font-size: 1.5rem;
@@ -146,7 +151,13 @@ flex-direction: column;
    line-height: 1.8;
    padding:10px 20px;
    width: 40%;
-}
+  }
+  #id02{width:40%;}
+  #id02 .log-2{width: 40%;}
+  #id02 .sub-con{
+  display: flex;
+  flex-direction: column;
+  }
 .wrapper {
   width: 50%;
   height:100vh;
