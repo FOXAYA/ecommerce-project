@@ -100,9 +100,7 @@ input::placeholder {
   line-height: 1.8;
   color: var(--light);
   color: var(--light);
-
 }
-
 .modall h5::before,
 .modall h5::after {
   content: "ـــــــــــــــــــــــــــــــــــ";
@@ -199,10 +197,9 @@ padding: 0 !important;
 
 @keyframes wave {
   from { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
-  from { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
+  from { transform: rotate(360deg);  }
 }
 
-/*****third form3***********/
 .agree-b{font-size: 1rem ;}
 .agree-b a{color:var(--primary);}
 /********START * Spinner************ ***/
