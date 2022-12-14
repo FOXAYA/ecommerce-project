@@ -47,84 +47,85 @@
  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <!--**************************body*************************************-->
-   <body>
-    <!--********************Start LOgin submit forms****************************-->
-    <!--------------------Login form 2-->
-  <div class="container-fluid">
-  <div class="row ">
-    <div class="col-sm-6">
-    <section id="id01" class="modall">
-    <div class="logo-container text-center">
-             <a class="navbar-brand animated rotateInDownLeft" href="#">
-        <span class="logo"><img src="images/favicon-32x32.png" class="logo-img" alt=""></span>
-        </a>
-        <h2>Welcome To Fox</h2>
-        <h6 class="text-center">The trusted community of buyers and sellers.</h6>
-    </div>
-        <form action="/action_page.php" class="form2 mt-4">
-        <div class="row">
-            <div class="contaiener text-center social">
-   <span class="ema-il"><i class="fa-solid fa-user fa-lg fa-fw social-i"></i>
-                <input type="email" class="Email" placeholder="username or email">
-            </span>
-            <span class="pass-word d-block mt-2">
-                <i class="fa-solid fa-lock fa-lg fa-fw social-i"></i>
-                <input type="password" class="password" placeholder="password">
-            </span>
-            <div class="rem-container d-flex ">
-              <button type="submit" class="btn btn-primary log-2 log mt-4">Log in</button>
-              <span class="check-b d-inline-block mt-3 px-3"><input type="checkbox" value="lsRememberMe"
-                id="rememberMe">
-                <label for="rememberMe" class="Reme">Remember me</label>
-                <a href="#" class=" text-decoration-underline ml-3 link-or">F orget password?</a>
-            </span>
+
+<body>
+  <!--********************Start LOgin submit forms****************************-->
+  <!--------------------Login form 2-->
+  <div class="container-fluid submit-data">
+    <div class="row ">
+      <div class="col-sm-6">
+        <section id="id01" class="modall">
+          <div class="logo-container text-center">
+            <a class="navbar-brand animated rotateInDownLeft" href="#">
+              <span class="logo"><img src="images/favicon-32x32.png" class="logo-img" alt=""></span>
+            </a>
+            <h2>Welcome To Fox</h2>
+            <h6 class="text-center">The trusted community of buyers and sellers.</h6>
+          </div>
+          <form action="/action_page.php" class="form2 mt-4">
+            <div class="row">
+              <div class="contaiener text-center social">
+                <span class="ema-il"><i class="fa-solid fa-user fa-lg fa-fw social-i"></i>
+                  <input type="email" class="Email" placeholder="username or email">
+                </span>
+                <span class="pass-word d-block mt-2">
+                  <i class="fa-solid fa-lock fa-lg fa-fw social-i"></i>
+                  <input type="password" class="password" placeholder="password">
+                </span>
+                <div class="rem-container d-flex ">
+                  <button type="submit" class="btn btn-primary log-2 log mt-4">Log in</button>
+                  <span class="check-b d-inline-block mt-3 px-3"><input type="checkbox" value="lsRememberMe"
+                      id="rememberMe">
+                    <label for="rememberMe" class="Reme">Remember me</label>
+                    <a href="#" class=" text-decoration-underline ml-3 link-or">F orget password?</a>
+                  </span>
+                </div>
+              </div>
+          </form>
+          <h5 class="text-center mt-4 mb-4">OR</h5>
+          <div class="social-container d-flex flex-column">
+            <a href="#" class="google btn "><i class="fab fa-google fa-lg fa-fw social-i"></i> Login with
+              Google+ </a>
+            <a href="#" class="fb btn mt-4" onclick="FbApp_Login();">
+              <i class="fab fa-facebook-f fa-lg fa-fw social-i"></i> Login with Facebook
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="col-sm-6">
+        <div class="wrapper">
+          <div class="wave">
+          </div>
+          <div class="sign-container " id="container-areyounew">
+            <h1>ARE YOU NEW !</h1>
+            <h2>sign up now</h2>
+            <button type="submit" class="btn sign-btn" onclick="goToSignup();">Sign up</button>
           </div>
         </div>
-              </form>
-        <h5 class="text-center mt-4 mb-4">OR</h5>
-        <div class="social-container">
-        <a href="#" class="google btn "><i class="fab fa-google fa-lg fa-fw social-i"></i> Login with
-        Google+ </a>
-        <a href="#" class="fb btn mt-4"  onclick="FbApp_Login();">
-        <i class="fab fa-facebook-f fa-lg fa-fw social-i"></i> Login with Facebook
-        </a>
-        </div>
-   </section>
-   </div>
-   <div class="col-sm-6">
-    <div class="wrapper">
-    <div class="wave">
       </div>
-    <div class="sign-container " id="container-areyounew">
-   <h1>ARE YOU NEW !</h1>
-    <h2>sign up now</h2>
-    <button type="submit" class="btn sign-btn" onclick="goToSignup();">Sign up</button>
     </div>
   </div>
-</div>
-</div>
-  </div>
-   <!--------------------submit form 3-->
-   <section id="id02" class="modall" style="display:none;">
-          <div class="logo-container text-center">
-        <a class="navbar-brand animated rotateInDownLeft" href="#">
-          <span class="logo "><img src="images/favicon-32x32.png" class="logo-img" alt=""></span>
-          </a>
-        <h1 class="bold mt-3">CREATE ACCOUNT</h1>
-      </div>
-   <form action="/action_page.php" class="form3">
-        <div class="row text-center ">
-          <span class="user-name d-block mb-3 mt-3">
-            <i class="fa-solid fa-user-alt fa-lg fa-fw social-i"></i>
-            <input type="text" class="username" placeholder="User Name">
-          </span>
+  <!--------------------submit form 3-->
+  <section id="id02" class="modall" style="display: none">
+    <div class="logo-container text-center">
+      <a class="navbar-brand animated rotateInDownLeft" href="#">
+        <span class="logo "><img src="images/favicon-32x32.png" class="logo-img" alt=""></span>
+      </a>
+      <h1 class="bold mt-3">CREATE ACCOUNT</h1>
+    </div>
+    <form action="/action_page.php" class="form3">
+      <div class="row text-center ">
+        <span class="user-name d-block mb-3 mt-3">
+          <i class="fa-solid fa-user-alt fa-lg fa-fw social-i"></i>
+          <input type="text" class="username" placeholder="User Name">
+        </span>
         <span class="ema-il mb-3 mt-3 "><i class="fa-solid fa-envelope fa-lg fa-fw social-i"></i>
           <input type="email" class="Email" placeholder="email">
         </span>
         <span class="tele-phone mb-3 mt-3"><i class="fa-solid fa-phone fa-lg fa-fw social-i"></i>
           <input type="tel" class="Tel" placeholder="phone number">
         </span>
-            <span class="pass-word d-block  mb-3 mt-3">
+        <span class="pass-word d-block  mb-3 mt-3">
           <i class="fa-solid fa-lock fa-lg fa-fw social-i"></i>
           <input type="password" class="password" placeholder="password">
         </span>
@@ -133,28 +134,29 @@
           <input type="password" class="password" placeholder="repeat password">
         </span>
       </div>
-      </form>
-      <div class="container text-center sub-con">
+    </form>
+    <div class="container text-center sub-con">
       <button type="submit" class="btn btn-primary log-2 log  mt-3 ">Log in</button>
       <span class="agree-b d-inline-block mt-3  text-capitalize">
-      <h6>By continuing, you are accepting</h6>
-      FOX <a href="terms.html" class="text-decoration-underline ml-3">terms of use</a>
-      and <a href="#" class="text-decoration-underline ml-3"> Privacy Policy</a>
-    </span>
+        <h6>By continuing, you are accepting</h6>
+        FOX <a href="terms.html" class="text-decoration-underline ml-3">terms of use</a>
+        and <a href="#" class="text-decoration-underline ml-3"> Privacy Policy</a>
+      </span>
     </div>
-      </section>
- <!--""""""""""""""""""""EndLOgin submit forms"""""""""""""""""""""""""""""""-->
- <!--**************************java script links****************************-->
- <script src="js/bootstrap.bundle.js"></script>
- <script src="js/bootstrap.bundle.js.map"></script>
- <script src="js/all.min.js"></script>
- <script src="js/jquery-3.6.0.min.js"></script>
- <script src="js/popper.min.js"></script>
- <script src="js/owl.carousel.min.js"></script>
- <script src="js/wow.min.js"></script>
- <script src="js/wow.js.map"></script>
- <script src="js/spinner.js"></script>
- <script src="js/main.js"></script>
- <script src="js/sdk.js"></script>
+  </section>
+  <!--""""""""""""""""""""EndLOgin submit forms"""""""""""""""""""""""""""""""-->
+  <!--**************************java script links****************************-->
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.js.map"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/wow.js.map"></script>
+  <script src="js/spinner.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sdk.js"></script>
 </body>
-    </html>
+
+</html>

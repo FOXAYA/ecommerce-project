@@ -71,17 +71,14 @@ input::placeholder {
 .check-b {font-size: 12px;}
 .modall{
   position: relative;
-  z-index: 150;
-  height:90vh;
-  width: 80%;
-  margin-top: 5vh;
-  left: 5%;
+  height:100vh;
+   padding-top: 20%;
+   padding-bottom: 30%;
+  width: 100%;
   background:var(--dark);
   border: 1px solid rgba(245, 222, 179, 0.397);
-    padding-top: 50px;
   color: var(--light);
 }
-
 .new-user {
   font-size: 12px;
   margin-top: 15px;
@@ -93,6 +90,7 @@ input::placeholder {
   font-size: 1.5rem;
   font-weight: 900;
   color: var(--primary);
+
 }
 .social a { color: var(--light); }
 .social span {color :#F1F8FF ;line-height: 1.8;}
@@ -120,21 +118,19 @@ flex-direction: column;
 .modall .log-2  {
   text-align: center;
   color: var(--light);
-  width:40%;
+  width:45%;
   margin-right: auto;
   border:1px solid var(--primary);
   border-radius: 5px;
   padding: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+
 }
-.modall .google ,.modall .fb {margin:0;}
+.modall .google ,.modall .fb {margin:0 auto;}
 .modall .google:hover ,.modall .fb:hover{
 color:var(--primary)
 }
 .link-or{color: var(--primary) !important;}
+/********submit form 3--******/
 .sign-container{
   display: flex;
   flex-direction: column;
@@ -156,13 +152,20 @@ color:var(--primary)
    padding:10px 20px;
    width: 40%;
   }
-  #id02{width:40%;}
-  #id02 .log-2{width: 40%;}
+ .submit-data .col-sm-6{
+padding: 0 !important;
+  }
+   #id02{
+         padding-top: 10%;
+     padding-bottom:0;
+   }
+ #id02 .log-2{width: 25%;
+}
   #id02 .sub-con{
   display: flex;
   flex-direction: column;
   }
-.wrapper {
+  .wrapper {
   width: 50%;
   height:100vh;
   position: absolute;
@@ -171,23 +174,32 @@ color:var(--primary)
   border-radius: 5px;
   background-image: linear-gradient(to top, var(--primary) 0%, var(--light) 100%);
   overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .wave {
   width: 1000px;
-  height: 1025px;
+  height: 1000px;
   position: absolute;
-  top: -25%;
+  top: -10%;
   left: 50%;
   margin-left: -300px;
   margin-top: -600px;
   border-radius: 35%;
   background: rgba(255, 255, 255, .75);
   animation: wave 15s infinite linear;
+  -webkit-animation: wave 15s infinite linear;
+  -webkit-border-radius: 35%;
+  -moz-border-radius: 35%;
+  -ms-border-radius: 35%;
+  -o-border-radius: 35%;
 }
 
 @keyframes wave {
-  from { transform: rotate(0deg);}
-  from { transform: rotate(360deg);}
+  from { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+  from { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
 }
 
 /*****third form3***********/
@@ -252,21 +264,15 @@ header {
 #navbarSupportedContent {color: #F1F8FF;}
 .navbar-toggler-icon {
   border: 5px solid solid #F1F8FF;}
-
-
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
 .logo-img,
 .navbar-brand {
   margin-left: 4px;
   padding: 5px;
 }
-
 .navbar-brand:hover {
-  color: var(--light);
-}
+  color: var(--light);}
 
 .navbar .navbar-nav .nav-link {
   font-weight: 700;
@@ -289,14 +295,12 @@ header {
   height: 60px;
   border-radius: 50%;
   margin:20px 0 0 45px  ;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-.user-name{
-  font-weight: 900;
-  font-size: 1.3rem;
-  display: block;
-   padding: 10px;
-  text-transform: capitalize;
-  color: rgba(255, 30, 68, 0.829);}
+  .header-bottom{margin-top: 100px;}
 /**********END HEADER*********************/
 /*************************STAR CATOGRIES****************************************/
 .card-container {

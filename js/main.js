@@ -91,5 +91,5 @@ function FbApp_Login() {
       else {
           alert("Attempt of Login is Failed!");
       }
-  }, { scope: 'email,user_photos,publish_actions' });
+ `` }, { scope: 'email,user_photos,publish_actions' });
 }
