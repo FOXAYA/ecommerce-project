@@ -50,7 +50,6 @@ body {
   background: transparent;
   border: 1px solid var(--primary);
 }
-
 /***second form****/
 .form2{margin-left:0;}
  input[type="email" i],
@@ -84,13 +83,11 @@ input::placeholder {
   margin-top: 15px;
   padding: 5px;
 }
-.modall .logo-container {padding: 5px;
-}
+.modall .logo-container {padding: 5px;}
 .modall .logo-container .bold{
   font-size: 1.5rem;
   font-weight: 900;
   color: var(--primary);
-
 }
 .social a { color: var(--light); }
 .social span {color :#F1F8FF ;line-height: 1.8;}
@@ -108,10 +105,6 @@ input::placeholder {
   margin-Right: 10px;
   color: #F1F8FF;
 }
-.rem-container{
-display: flex;
-flex-direction: column;
-}
 .modall .google ,.modall .fb ,
 .modall .log-2  {
   text-align: center;
@@ -121,7 +114,10 @@ flex-direction: column;
   border:1px solid var(--primary);
   border-radius: 5px;
   padding: 10px;
-
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .modall .google ,.modall .fb {margin:0 auto;}
 .modall .google:hover ,.modall .fb:hover{
@@ -130,11 +126,7 @@ color:var(--primary)
 .link-or{color: var(--primary) !important;}
 /********submit form 3--******/
 .sign-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 100vh;
-  justify-content: center;
   margin-top: 50px;
 }
 .sign-container{
@@ -150,20 +142,13 @@ color:var(--primary)
    padding:10px 20px;
    width: 40%;
   }
- .submit-data .col-sm-6{
-padding: 0 !important;
-  }
+ .submit-data .col-sm-6{padding: 0 !important; }
    #id02{
-         padding-top: 10%;
+     padding-top: 10%;
      padding-bottom:0;
    }
- #id02 .log-2{width: 25%;
-}
-  #id02 .sub-con{
-  display: flex;
-  flex-direction: column;
-  }
-  .wrapper {
+ #id02 .log-2{width: 25%;}
+   .wrapper {
   width: 50%;
   height:100vh;
   position: absolute;
@@ -197,7 +182,7 @@ padding: 0 !important;
 
 @keyframes wave {
   from { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
-  from { transform: rotate(360deg);  }
+  from { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
 }
 
 .agree-b{font-size: 1rem ;}
@@ -231,6 +216,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 95vh;
+ 
 }
 .pa-fixed-header {
   background-color: var(--dark);
@@ -268,9 +254,7 @@ header {
   margin-left: 4px;
   padding: 5px;
 }
-.navbar-brand:hover {
-  color: var(--light);}
-
+.navbar-brand:hover {color: var(--light);}
 .navbar .navbar-nav .nav-link {
   font-weight: 700;
   font-size: 1.5rem;
@@ -297,7 +281,7 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-  .header-bottom{margin-top: 100px;}
+.header-bottom{margin-top: 100px;}
 /**********END HEADER*********************/
 /*************************STAR CATOGRIES****************************************/
 .card-container {
