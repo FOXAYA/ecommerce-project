@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- basic -->
   <meta charset="utf-8">
@@ -47,6 +48,7 @@
  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <!--**************************body*************************************-->
+
 <body>
   <div class="container-fluid bg-white p-0">
     <!--**************************Start Spinner****************************-->
@@ -56,31 +58,89 @@
         <span class="sr-only">Loading...</span>
       </div>
     </div>
-     <!--"""""""""""""""""""""""""End Spinner""""""""""""""""""""""""""""""-->
+    <!--"""""""""""""""""""""""""End Spinner""""""""""""""""""""""""""""""-->
     <!--**************************Start Header****************************-->
-     <header  style="height:10%; padding:10px;
-  background: linear-gradient(rgba(15, 23, 43, 0.793), rgba(15, 23, 43, 0.765)), url(../images/header-sell.png);">
-           <div class="container">
-              <svg xmlns="http://www.w3.org/2000/svg"  aria-label="Back button" color = "#FEA116" width="20" height="20" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
-            </svg>
-     <a class="navbar-brand animated rotateInDownLeft" href="index.html" >
-      <span class="logo">F<img src="images/favicon-32x32.png" class="logo-img" alt="" >X</span>
-     </a>
+    <header
+      style="height:10%; padding:10px;
+          background: linear-gradient(rgba(15, 23, 43, 0.793), rgba(15, 23, 43, 0.765)), url(../images/header-sell.png);">
+      <div class="container-fluid">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Back button" color="#FEA116" width="20" height="20"
+          fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
+     </svg>
+        <a class="navbar-brand animated rotateInDownLeft" href="index.html">
+          <span class="logo">F<img src="images/favicon-32x32.png" class="logo-img" alt="">X</span>
+        </a>
     </header>
-     <!--"""""""""""""""""""""""""""End Header""""""""""""""""""""""""""""""""""-->
-     
-         <!--**************************java script links****************************-->
-      <script src="js/bootstrap.bundle.js"></script>
-      <script src="js/bootstrap.bundle.js.map"></script>
-      <script src="js/all.min.js"></script>
-      <script src="js/jquery-3.6.0.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/wow.min.js"></script>
-      <script src="js/wow.js.map"></script>
-      <script src="js/spinner.js"></script>
-      <script src="js/main.js"></script>
-     <script src="js/sdk.js"></script>
-  </body>
-  </html>
+    <!--"""""""""""""""""""""""""""End Header""""""""""""""""""""""""""""""""""-->
+    <!--************************** Start sell form ****************************-->
+    <section>
+      <h1 class="text-center mt-5">POST YOUR AD</h1>
+      <div class=" container container-border">
+        <div class="row sell-hr">
+          <div class="col-sm-12">
+            <h2 class="h2-bold">SELECTED CATEGORY</h2>
+            <div>
+              <span class="p-2">category/category</span><a href="#" style="text-decoration: underline; color: black; font-weight: 600">change</a>
+            </div>
+          </div>
+          </div>
+          <!----second row------------------>
+           <div class="row sell-hr ">
+          <div class="col-sm-12">
+            <h2 class="h22-bold">INCLUDE SOME DETAILS</h2>
+            <form action="" class="sell-form">
+              <label class="my-1 mr-2" for="title">Add title</label>
+                <input type="text" class="form-control" name="title" spellcheck="false" id="formGroupExampleInput" placeholder="Example input"  maxlength="70" autocomplete="nope" value="">
+            </div>
+            <label class="my-1 mr-2" for="brand">Brand</label>
+            <div class="searchable">
+              <input type="text" placeholder="search countries" onkeyup="filterFunction(this,event)">
+            <ul class="form-control form-control-lg">
+                  <li>brand</li>
+                  <li>brand</li>
+                  <li>brand </li>
+                  <li>brand </li>
+                  <li>brand</li>
+                  <li>brand</li>
+                  <li>brand</li>
+                  <li>brand</li>
+                  <li>brand</li>
+                  <li>fbrand</li>
+                  <li>brand</li>
+                  <li>brandl</li>
+                  <li>brand</li>
+                  <li>brand</li>
+              </ul>
+          </div>
+                  <label class="my-1 mr-2" for="description">Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+          <span class="p-2"> Include condition, features and reason for selling</span>
+          <div class="row sell-hr ">
+          <label class="my-1 mr-2" for="price">SET A PRICE</label>
+                    <div class="cb8c9afa _1aed01ea"><label for="price" class="_9e14c74e"><span class="_34a7409b _2e82a662">Price</span></label><div class="f6c2c5a2"><span class="f16b0aeb"><span class="_8918c0a8">EGP</span></span><input id="price" name="price" spellcheck="false" class="fc60720d" autocomplete="nope" type="text" value=""></div><div class="df4e426f"><span class="c45bea97 _852d2e15"><span class="_8918c0a8">This field is required</span></span></div></div>
+                    <input class="custom-file-input" type="file">
+                  </form>
+                </div>
+                </div>
+      </div>
+    </section>
+    <!--"""""""""""""""""""""""""""" End sell form  """"""""""""""""""""""""""""-->
+    <!--**************************java script links****************************-->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow.js.map"></script>
+    <script src="js/spinner.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sdk.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

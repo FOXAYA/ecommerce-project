@@ -187,6 +187,67 @@ color:var(--primary)
 
 .agree-b{font-size: 1rem ;}
 .agree-b a{color:var(--primary);}
+/*************start sell form**************************/
+.sell-form input{
+ width: 99%;
+
+}
+div.searchable {
+  width: 300px;
+  float: left;
+  margin: 0 15px;
+}
+
+.searchable input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  /*Safari/Chrome,otherWebKit*/-moz-box-sizing: border-box;
+  /*Firefox,otherGecko*/box-sizing: border-box;
+  /*Opera/IE8+*/display: block;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+}
+
+.searchable ul {
+  display: none;
+  list-style-type: none;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #add8e6;
+  border-top: none;
+  max-height: 180px;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+}
+
+.searchable ul li {
+  padding: 7px 9px;
+  border-bottom: 1px solid #e1e1e1;
+  cursor: pointer;
+  color: #6e6e6e;
+}
+
+.searchable ul li.selected {
+  background-color: #e8e8e8;
+  color: #333;
+}
+/*************end sell form**************************/
 /********START * Spinner************ ***/
 #spinner {
   opacity: 0;
@@ -216,7 +277,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 95vh;
- 
+
 }
 .pa-fixed-header {
   background-color: var(--dark);
@@ -296,10 +357,54 @@ header {
   font-size: 35px;
 }
 .card-footer a { color: #FEA116;}
-
 /*******END  CATOGRIES****************/
+/**************************************/
+.container-border{
+  height: 100vh;
+  border: 1px solid black;
+  padding: 0;
+}
+.h2-bold{
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.h22-bold{
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 28px;
+}
+.sell-hr{
+  border-bottom: 1px solid black;
+  padding-bottom: 11px;
+}
+/*************start Footer***********************************/
 footer {background-color: var(--dark);}
 .container-fluid {padding: 0;}
 .footer-bottom {background: var(--primary);}
 /*************End Footer***********************************/
 /************Start forms****************************/
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select some files';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  height: 700px;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
