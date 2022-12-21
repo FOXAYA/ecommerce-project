@@ -32,6 +32,8 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rock+Salt&display=swap"
     rel="stylesheet">
+  <!--------select menu css-->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
   <!-- Responsive-->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -68,65 +70,272 @@
           fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
-     </svg>
+        </svg>
         <a class="navbar-brand animated rotateInDownLeft" href="index.html">
           <span class="logo">F<img src="images/favicon-32x32.png" class="logo-img" alt="">X</span>
         </a>
     </header>
     <!--"""""""""""""""""""""""""""End Header""""""""""""""""""""""""""""""""""-->
     <!--************************** Start sell form ****************************-->
-    <section>
+    <section class="m-5">
       <h1 class="text-center mt-5">POST YOUR AD</h1>
-      <div class=" container container-border">
-        <div class="row sell-hr">
+      <div class="container container-border">
+        <div class="row">
           <div class="col-sm-12">
             <h2 class="h2-bold">SELECTED CATEGORY</h2>
             <div>
-              <span class="p-2">category/category</span><a href="#" style="text-decoration: underline; color: black; font-weight: 600">change</a>
+              <span class="p-2">category/category</span>
+              <a href="#" style="text-decoration: underline; color: black; font-weight: 600">change</a>
             </div>
           </div>
-          </div>
-          <!----second row------------------>
-           <div class="row sell-hr ">
-          <div class="col-sm-12">
-            <h2 class="h22-bold">INCLUDE SOME DETAILS</h2>
-            <form action="" class="sell-form">
-              <label class="my-1 mr-2" for="title">Add title</label>
-                <input type="text" class="form-control" name="title" spellcheck="false" id="formGroupExampleInput" placeholder="Example input"  maxlength="70" autocomplete="nope" value="">
-            </div>
-            <label class="my-1 mr-2" for="brand">Brand</label>
-            <div class="searchable">
-              <input type="text" placeholder="search countries" onkeyup="filterFunction(this,event)">
-            <ul class="form-control form-control-lg">
-                  <li>brand</li>
-                  <li>brand</li>
-                  <li>brand </li>
-                  <li>brand </li>
-                  <li>brand</li>
-                  <li>brand</li>
-                  <li>brand</li>
-                  <li>brand</li>
-                  <li>brand</li>
-                  <li>fbrand</li>
-                  <li>brand</li>
-                  <li>brandl</li>
-                  <li>brand</li>
-                  <li>brand</li>
-              </ul>
-          </div>
-                  <label class="my-1 mr-2" for="description">Description</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-          <span class="p-2"> Include condition, features and reason for selling</span>
-          <div class="row sell-hr ">
-          <label class="my-1 mr-2" for="price">SET A PRICE</label>
-                    <div class="cb8c9afa _1aed01ea"><label for="price" class="_9e14c74e"><span class="_34a7409b _2e82a662">Price</span></label><div class="f6c2c5a2"><span class="f16b0aeb"><span class="_8918c0a8">EGP</span></span><input id="price" name="price" spellcheck="false" class="fc60720d" autocomplete="nope" type="text" value=""></div><div class="df4e426f"><span class="c45bea97 _852d2e15"><span class="_8918c0a8">This field is required</span></span></div></div>
-                    <input class="custom-file-input" type="file">
-                  </form>
-                </div>
-                </div>
+        <hr class="sell-hr">
+        <!--------------------------------end row1------------------------------------>
+        <div class="row">
+          <div class="col-sm-12 mb-3">
+            <h2 class="h23-bold ">INCLUDE SOME DETAILS</h2>
+            <form action="" class="sell-form">
+              <div class="sell-child">
+                <label for="title" class="sl-tit mb-1">Add-title</label>
+                <input type="text" class="form-control" name="title" spellcheck="false" id="formGroupExampleInput"
+                  maxlength="70" autocomplete="nope" value="">
+                <span>Mention the key features of your item (e.g. brand, model, age, type)</span>
+              </div>
+          </div>
+          <div class="col-sm-12 d-flex flex-column sell-child  mb-3">
+            <label for="Brand" class="sl-br mb-1">Brand</label>
+            <!-- Dropdown -->
+            <select id='selUser' class="sell-child">
+              <option value="0"></option>
+              <option value='0'>Brand one</option>
+              <option value='1'>Brand</option>
+              <option value='2'>Brand</option>
+              <option value='3'>Brand</option>
+              <option value='4'>Brand</option>
+              <option value='5'> Brand</option>
+              <option value='6'> Brand</option>
+              <option value='7'> Brand</option>
+              <option value='8'>Brand one</option>
+              <option value='9'>Brand</option>
+              <option value='10'>Brand</option>
+              <option value='11'>Brand</option>
+              <option value='12'>Brand</option>
+              <option value='13'> Brand </option>
+              <option value='14'> Brand</option>
+              <option value='15'> Brand</option>
+            </select>
+          </div>
+          <div class="col-sm-12  mb-1 sell-child">
+            <label for="description" class="sl-des mb-2">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <span>Include condition, features and reason for selling</span>
+          </div>
+        </div>
+        <hr class="sell-hr">
+        <!-------------------------------end second row------------------>
+        <div class="row">
+          <div class="col-sm-12 sell-child ">
+            <h2 class="h22-bold">SET A PRICE</h2>
+            <label for="price" class="sl-pr mb-1">price</label>
+            <input type="number" id="typeNumber" class="form-control" min="200" max="100000000" step="1"
+              required="required" value="" placeholder="EGY |">
+          </div>
+        </div>
+        <hr class="sell-hr">
+        <!-------------------------------endthird row------------------>
+        <div class="row sell-child">
+          <h2 class="h2-bold">YOUR AD'S LOCATION</h2>
+          <label for="location" class="sl-loc mb-2">location</label>
+          <select id='selCoun' name="country">
+            <option value=""></option>
+            <option>select country</option>
+            <option value="AF">Afghanistan</option>
+            <option value="AX">Aland Islands</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+            <option value="AD">Andorra</option>
+            <option value="AO">Angola</option>
+            <option value="AI">Anguilla</option>
+            <option value="AQ">Antarctica</option>
+            <option value="AG">Antigua and Barbuda</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AW">Aruba</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="BS">Bahamas</option>
+            <option value="BH">Bahrain</option>
+            <option value="BD">Bangladesh</option>
+            <option value="BB">Barbados</option>
+            <option value="BY">Belarus</option>
+            <option value="BE">Belgium</option>
+            <option value="BZ">Belize</option>
+            <option value="BJ">Benin</option>
+            <option value="BM">Bermuda</option>
+            <option value="BT">Bhutan</option>
+            <option value="BO">Bolivia</option>
+            <option value="IO">British Indian Ocean Territory</option>
+            <option value="BN">Brunei Darussalam</option>
+            <option value="BG">Bulgaria</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="CM">Cameroon</option>
+            <option value="CA">Canada</option>
+            <option value="CV">Cape Verde</option>
+            <option value="KY">Cayman Islands</option>
+            <option value="CF">Central African Republic</option>
+            <option value="TD">Chad</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CX">Christmas Island</option>
+            <option value="CC">Cocos (Keeling) Islands</option>
+            <option value="CO">Colombia</option>
+            <option value="KM">Comoros</option>
+            <option value="CG">Congo</option>
+            <option value="CD">Congo, Democratic Republic of the Congo</option>
+            <option value="CK">Cook Islands</option>
+            <option value="CR">Costa Rica</option>
+            <option value="CI">Cote D'Ivoire</option>
+            <option value="HR">Croatia</option>
+            <option value="CU">Cuba</option>
+            <option value="CW">Curacao</option>
+            <option value="CY">Cyprus</option>
+            <option value="CZ">Czech Republic</option>
+            <option value="DK">Denmark</option>
+            <option value="DJ">Djibouti</option>
+            <option value="DM">Dominica</option>
+            <option value="DO">Dominican Republic</option>
+            <option value="EC">Ecuador</option>
+            <option value="EG">Egypt</option>
+            <option value="SV">El Salvador</option>
+            <option value="GQ">Equatorial Guinea</option>
+            <option value="ER">Eritrea</option>
+            <option value="EE">Estonia</option>
+            <option value="ET">Ethiopia</option>
+            <option value="FK">Falkland Islands (Malvinas)</option>
+            <option value="FO">Faroe Islands</option>
+            <option value="FJ">Fiji</option>
+            <option value="FI">Finland</option>
+            <option value="FR">France</option>
+            <option value="GF">French Guiana</option>
+            <option value="PF">French Polynesia</option>
+            <option value="TF">French Southern Territories</option>
+            <option value="GA">Gabon</option>
+            <option value="GM">Gambia</option>
+            <option value="GE">Georgia</option>
+            <option value="DE">Germany</option>
+            <option value="GH">Ghana</option>
+            <option value="GI">Gibraltar</option>
+            <option value="GR">Greece</option>
+            <option value="GL">Greenland</option>
+            <option value="GD">Grenada</option>
+            <option value="GP">Guadeloupe</option>
+            <option value="GU">Guam</option>
+            <option value="GT">Guatemala</option>
+            <option value="GG">Guernsey</option>
+            <option value="GN">Guinea</option>
+            <option value="GW">Guinea-Bissau</option>
+            <option value="GY">Guyana</option>
+            <option value="HT">Haiti</option>
+            <option value="HM">Heard Island and Mcdonald Islands</option>
+            <option value="VA">Holy See (Vatican City State)</option>
+            <option value="HN">Honduras</option>
+            <option value="HK">Hong Kong</option>
+            <option value="HU">Hungary</option>
+            <option value="IS">Iceland</option>
+            <option value="IN">India</option>
+            <option value="ID">Indonesia</option>
+            <option value="IR">Iran, Islamic Republic of</option>
+            <option value="IQ">Iraq</option>
+            <option value="IE">Ireland</option>
+            <option value="IM">Isle of Man</option>
+            <option value="IL">Israel</option>
+            <option value="IT">Italy</option>
+          </select>
+        </div>
+        <hr class="sell-hr">
+        <!-------------------------------end fourth row------------------>
+        <div class="row pl-2 ">
+          <h2 class="h23-bold ">UPLOAD UP TO 20 PHOTOS</h2>
+          <div class="col-sm-12 justify-content-around d-flex mb-5">
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+          </div>
+          <div class="col-sm-12 justify-content-around d-flex mb-5">
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+            <label class="filebutton">
+              <img src="/images/icons8-add-image-50.png" alt="">
+              <span><input type="file" id="myfile" name="myfile"></span>
+            </label>
+          </div>
+        </div>
+        <hr class="sell-hr">
+        <!-------------------------------end 5 row------------------>
+        <div class="black-button">
+    <button type="submit" class="btn btn-primary sell-btn ">post now</button>
+  </div>
+        </form>
       </div>
     </section>
+    <footer>
+      <div class="row pt-2">
+        <div class="col-12">
+          <p class="text-center text-light">
+            Copyright &copy; 2022 | Fox
+          </p>
+        </div>
+    </footer>
+
     <!--"""""""""""""""""""""""""""" End sell form  """"""""""""""""""""""""""""-->
     <!--**************************java script links****************************-->
     <script src="js/bootstrap.bundle.js"></script>
@@ -139,8 +348,10 @@
     <script src="js/wow.js.map"></script>
     <script src="js/spinner.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/sdk.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 </body>
 
 </html>
