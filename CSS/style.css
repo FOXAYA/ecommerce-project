@@ -274,7 +274,7 @@ input::placeholder {
   border: 1px solid rgba(128, 128, 128, 0.301);
   padding: 20px 0 0 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  height: 178vh;
+  height: 185vh;
 }
 
 .h2-bold,
@@ -407,7 +407,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95vh;
+  height: 85vh;
 }
 .pa-fixed-header {
   background-color: var(--dark);
