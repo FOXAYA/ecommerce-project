@@ -503,6 +503,32 @@ header {
 
 /**********END HEADER*********************/
 /*************************STAR CATOGRIES****************************************/
+.categ-list{
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 5px  ;
+  box-shadow: rgba(136, 140, 145, 0.2) 0px 9px 24px;
+}
+.droplink{
+  color: var(--light) !important;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.categ-list{
+  position:relative;
+  z-index: 100;
+}
+.dropdown-menu{
+  color: var(--dark);
+}
+.dropdown-item:hover{
+  background-color: var(--primary);
+ }
+
+/************************END  CATOGRIES*********************/
+/************************start cards*********************/
+
 .card-container {
   padding: 100px 0px;
   -webkit-perspective: 1000;
@@ -512,7 +538,10 @@ header {
 .card {
   padding: 0 !important;
 }
-
+.card img{
+width: 100%;
+height: 100%;
+}
 .head-tit {
   color: var(--dark);
   text-decoration: underline;
@@ -522,8 +551,7 @@ header {
 .card-footer a {
   color: #FEA116;
 }
-
-/************************END  CATOGRIES*********************/
+/************************End cards*********************/
 /*************start Footer**********************************/
 footer {
   background-color: var(--dark);
@@ -536,5 +564,7 @@ footer {
 .footer-bottom {
   background: var(--primary);
 }
-
+.footer-link-list a{
+  color: var(--primary);
+}
 /*************End Footer************************************/
