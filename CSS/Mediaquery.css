@@ -1,8 +1,8 @@
 @media (min-width: 375px) and (max-width: 990px) {
   /*****************START HEADER**************************/
-header{
-  height: 100vh;
-}
+  header {
+    height: 100vh;
+  }
   .navbar-toggler-icon {
     border: 1px solid #f1f8ff;
   }
@@ -15,7 +15,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -26,8 +25,7 @@ header{
   .form1 {
     width: 100%;
     margin-left: 0;
-margin-bottom: 30px;
-
+    margin-bottom: 30px;
   }
 
   .form1 .search {
@@ -45,13 +43,21 @@ margin-bottom: 30px;
   }
 
   .header-bottom {
-    margin-top:10vh
+    margin-top: 10vh;
   }
   .categories-cards .card {
     margin-top: 20px;
   }
 }
-
+@media (min-width:996px) and (max-width:1500px)  {
+  .form1 {
+  width: 50%;
+margin-right: 20px;
+ }
+.content-bottom{
+  padding-top: 0;
+}
+}
 /**********END HEADER*********************/
 /****
   .modal {
