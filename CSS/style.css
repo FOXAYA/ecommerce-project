@@ -129,7 +129,6 @@ input::placeholder {
   color: #f1f8ff;
   line-height: 1.8;
 }
-
 .social .btn {
   width: 100%;
   margin: 5px;
@@ -137,7 +136,6 @@ input::placeholder {
   color: var(--light);
   color: var(--light);
 }
-
 .modall h5::before,
 .modall h5::after {
   content: "ـــــــــــــــــــــــــــــــــــ";
@@ -181,12 +179,10 @@ input::placeholder {
   height: 100vh;
   margin-top: 50px;
 }
-
 .sign-container {
   color: var(--dark);
   font-weight: 900;
 }
-
 .sign-container .sign-btn {
   border: 1px solid var(--dark);
   background: transparent;
@@ -196,7 +192,6 @@ input::placeholder {
   padding: 10px 20px;
   width: 40%;
 }
-
 .submit-data .col-sm-6 {
   padding: 0 !important;
 }
@@ -413,7 +408,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
 }
 .pa-fixed-header {
   background-color: var(--dark);
