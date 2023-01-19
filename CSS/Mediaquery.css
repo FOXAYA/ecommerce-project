@@ -35,7 +35,7 @@
 
   .form1 [type="search"] {
     width: 200px;
-    margin-left: 5px;
+    margin-left: 20%;
     height: 40px;
   }
 
@@ -44,7 +44,7 @@
   }
 
   .header-bottom {
-    margin-top: 10vh;
+    margin-top: 20vh;
   }
   .categories-cards .card {
     margin-top: 20px;
@@ -132,61 +132,27 @@
     }
   }
 
-  }
-
-/**********END HEADER*********************/
-/****
-  /*****************sellform*******************
-  .container-border {
-    height: 190vh;
-  }
-
-  .h2-bold,
-  .h22-bold {
-    font-size: 1.0rem
-  }
-
-  .h23-bold {
-    font-size: 1.0rem;
-    margin-left: 10px;
-  }
-
-  .sell-form input[type="text"],
-  input[type="number"],
-  .select2-container--default .select2-selection--single {
-    height: 30px !important;
-  }
-
-  .sell-child {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  textarea.form-control,
-  input[type="number"],
-  .sell-form input[type="text"],
-  .select2-container--default .select2-selection--single {
-    width: 319px;
-  }
-
-  label.filebutton {
-    width: 70px;
-    height: 70px;
-  }
-
-  .filebutton img {
-    margin: 10px;
-  }
-
-  .black-button .btn.btn.btn-primary {
-    font-size: 1.0rem;
-    padding: 10px;
-    width: 130px;
+  .avatar {
+    width: 50px;
     height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
-
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-container .user-name {
+    color: var(--light);
+    margin-left: 4px;
+    margin-top: 5px;
+  }
 }
-
 /*****Start LOgin submit form
 
 @media (min-width: 600px) and (max-width: 768px) {

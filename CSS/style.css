@@ -486,7 +486,10 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 35px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .profile-container {
   display: flex;
@@ -564,7 +567,6 @@ header {
 .card-footer a {
   color: #fea116;
 }
-
 
 /************************End cards*********************/
 /*************start Footer**********************************/
