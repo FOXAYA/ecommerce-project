@@ -153,6 +153,50 @@
     margin-top: 5px;
   }
 }
+
+@media (min-width: 375px) and (max-width: 630px) {
+  .container-border {
+    padding: 10px 0 0 0 !important;
+    height: 510vh;
+  }
+  label.filebutton {
+    width: 130px;
+    height: 130px;
+  }
+
+  .filebutton img {
+    margin: 40px;
+  }
+  .black-button .btn.btn.btn-primary {
+    font-size: 0.95rem;
+    letter-spacing: 1.8px;
+    line-height: 1.8;
+    padding: 13px;
+    width: 150px;
+    height: 40px;
+    margin-left: 65px;
+  }
+  .filebutton {
+    margin-left: 50px;
+  }
+  .h2-bold,
+  .h22-bold {
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 7px;
+  }
+
+  .h23-bold {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 7px;
+    margin-left: 22px;
+  }
+  .sell-sec {
+    padding: 5px;
+  }
+}
+
 /*****Start LOgin submit form
 
 @media (min-width: 600px) and (max-width: 768px) {
