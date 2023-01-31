@@ -301,24 +301,20 @@ input[type="number"] {
   width: calc(100% - 3%);
   height: 40px !important;
 }
-
 .sell-child {
   margin-left: 20px;
   margin-right: 20px;
 }
-
 .select2-container--default
   .select2-selection--single
   .select2-selection__arrow {
   display: none;
 }
-
 #form4Example3 {
   width: calc(100% - 3%);
   height: 150px;
   border: 1px solid var(--dark) !important;
 }
-
 /*to remove arrow in number field*/
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -379,7 +375,7 @@ label span input {
   color: var(--light);
   background: var(--dark) !important;
 }
-.sell-footer{
+.sell-footer {
   z-index: 999;
   position: relative;
 }
@@ -578,7 +574,6 @@ header {
 .card-footer a {
   color: #fea116;
 }
-
 /************************End cards*********************/
 /*************start Footer**********************************/
 footer {

@@ -136,10 +136,6 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
   }
   .profile-container {
     display: flex;
@@ -153,8 +149,7 @@
     margin-top: 5px;
   }
 }
-
-@media (min-width: 375px) and (max-width: 630px) {
+@media (min-width: 375px) and (max-width: 575px) {
   .container-border {
     padding: 10px 0 0 0 !important;
     height: 510vh;
@@ -195,131 +190,108 @@
   .sell-sec {
     padding: 5px;
   }
+  #typeNumber {
+    width: 90%;
+  }
+  textarea {
+    max-width: 90%;
+  }
 }
 
-/*****Start LOgin submit form
+@media only screen and (min-width: 575px) and (max-width: 768px) {
+  .container-border {
+    padding: 10px 0 0 0 !important;
+    height: 330vh;
+  }
+  #typeNumber {
+    max-width: 412px !important;
+  }
+  textarea {
+    max-width: 100%;
+  }
+  .black-button .btn.btn.btn-primary {
+    font-size: 0.95rem;
+    letter-spacing: 1.8px;
+    line-height: 1.8;
+    padding: 13px;
+    width: 200px;
+    height: 50px;
+    margin-left: 150px;
+  }
 
-@media (min-width: 600px) and (max-width: 768px) {
-  .modall {
+  input[type="number"] {
+    width: calc(100%);
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    display: none;
+  }
+
+  #form4Example3 {
+    width: calc(100% - 3%);
+    height: 150px;
+    border: 1px solid var(--dark) !important;
+  }
+  .container-upload {
+    margin-left: 6%;
+  }
+  .select2-container--default .select2-selection--single {
+    width: 90%;
+    height: 40px !important;
+  }
+  .wi-d {
+    width: 475px;
+  }
+  .wi-d-2 {
     width: 100%;
-    height: 100vh;
-    left: 0;
-  }
-
-  .modall .logo-container {
-    padding: 50px;
-  }
-
-  .modall .logo-container .bold {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--primary);
-  }
-
-  .social a {
-    color: var(--light);
-  }
-
-  .social span {
-    color: #F1F8FF;
-    line-height: 1.8;
-  }
-
-  .social .btn {
-    line-height: 1.8;
-    color: var(--light);
-    color: var(--light);
-  }
-
-  .modall h5::before,
-  .modall h5::after {
-    content: "ـــــــــــــــــــــــــــ";
-    margin-left: 5px;
-    margin-Right: 5px;
-    color: #F1F8FF;
-  }
-
-  .rem-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .modall .google,
-  .modall .fb,
-  .modall .log-2 {
-    width: 70%;
-    margin-left: 0 auto;
-    border-radius: 5px;
-    padding: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-  }
-
-  .wave {
-    height: 1000px;
-  }
-
-  #id02 {
-    height: 100vh;
-  }
-
-  .sign-container .sign-btn {
-    padding: 5px 5px;
-    width: 60%;
-  }
-
-  .sign-container h1 {
-    margin: 10px;
-  }
-
-  /*****************sellform
-
-  .sell-form input[type="text"],
-  input[type="number"],
-  .select2-container--default .select2-selection--single {
-    height: 40px !important;
-  }
-
-  .sell-child {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  textarea.form-control,
-  input[type="number"],
-  .sell-form input[type="text"],
-  .select2-container--default .select2-selection--single {
-    width: 477px !important;
-  }
-
-  .container-border {
-    height: 250vh;
   }
 }
-********/
-/******
-@media (min-width: 769px) and (max-width:1425px) {
-  .sell-form input[type="text"],
-  input[type="number"],
+
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+    .container-border {
+    padding: 10px 0 0 0 !important;
+    height: 330vh;
+  }
+   textarea {
+    max-width: 100%;
+  }
+  .black-button .btn.btn.btn-primary {
+    font-size: 0.95rem;
+    letter-spacing: 1.8px;
+    line-height: 1.8;
+    padding: 13px;
+    width: 200px;
+    height: 50px;
+    margin-left: 150px;
+  }
+  input[type="number"]{
+    width: 660px;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    display: none;
+  }
+  #form4Example3{
+    width: calc(100% - 3%);
+    height: 150px;
+    border: 1px solid var(--dark) !important;
+  }
+  .container-upload{
+    margin-left:6%;
+  }
   .select2-container--default .select2-selection--single {
-    height: 40px !important;
+    width:100%;
+    height:40px !important;
   }
-
-  .sell-child {
-    margin-left: 10px;
-    margin-right: 10px;
+  .wi-d{
+    width:96%;
   }
-
-  .container-border {
-    height: 240vh;
+  .wi-d-2{
+    width:96%;
   }
-
-  textarea.form-control,
-  input[type="number"],
-  .sell-form input[type="text"],
-  .select2-container--default .select2-selection--single {
-    width: 477px !important;
+  #typeNumber{
+    width: 100% !important;
   }
-}********/
+}
